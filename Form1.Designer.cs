@@ -56,12 +56,15 @@
             this.button7 = new System.Windows.Forms.Button();
             this.AgregarMascota = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
+            this.MostrarDueños = new System.Windows.Forms.Button();
+            this.MostrarMascotas = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.MostrarDueños);
             this.panel1.Controls.Add(this.lblsexo);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.lbldireccion);
@@ -192,6 +195,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.MostrarMascotas);
             this.panel2.Controls.Add(this.lbledad);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.lbldueño);
@@ -320,6 +324,26 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Nombre";
             // 
+            // MostrarDueños
+            // 
+            this.MostrarDueños.Location = new System.Drawing.Point(281, 248);
+            this.MostrarDueños.Name = "MostrarDueños";
+            this.MostrarDueños.Size = new System.Drawing.Size(19, 23);
+            this.MostrarDueños.TabIndex = 13;
+            this.MostrarDueños.Text = "M";
+            this.MostrarDueños.UseVisualStyleBackColor = true;
+            this.MostrarDueños.Click += new System.EventHandler(this.MostrarDueños_Click);
+            // 
+            // MostrarMascotas
+            // 
+            this.MostrarMascotas.Location = new System.Drawing.Point(281, 248);
+            this.MostrarMascotas.Name = "MostrarMascotas";
+            this.MostrarMascotas.Size = new System.Drawing.Size(19, 23);
+            this.MostrarMascotas.TabIndex = 14;
+            this.MostrarMascotas.Text = "M";
+            this.MostrarMascotas.UseVisualStyleBackColor = true;
+            this.MostrarMascotas.Click += new System.EventHandler(this.MostrarMascotas_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -368,6 +392,8 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button AgregarMascota;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button MostrarDueños;
+        private System.Windows.Forms.Button MostrarMascotas;
     }
 }
 

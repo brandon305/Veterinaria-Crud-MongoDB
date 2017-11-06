@@ -66,6 +66,18 @@ namespace CRUD_MongoDB
             }
         }
 
+        private void MostrarDueños_Click(object sender, EventArgs e)
+        {
+            VistaDueños ventana1 = new VistaDueños();
+            ventana1.Show();      
+        }
+
+        private void MostrarMascotas_Click(object sender, EventArgs e)
+        {
+            VistaMascotas ventana1 = new VistaMascotas();
+            ventana1.Show();
+        }
+
     
     }
 }

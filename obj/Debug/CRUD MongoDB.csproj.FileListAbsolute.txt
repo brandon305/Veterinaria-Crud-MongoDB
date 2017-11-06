@@ -11,3 +11,5 @@ C:\Users\Bryam\Documents\Visual Studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\b
 C:\Users\Bryam\Documents\Visual Studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\bin\Debug\MongoDB.Driver.dll
 C:\Users\Bryam\Documents\Visual Studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\bin\Debug\MongoDB.Bson.xml
 C:\Users\Bryam\Documents\Visual Studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\bin\Debug\MongoDB.Driver.xml
+C:\Users\Bryam\documents\visual studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\obj\Debug\CRUD_MongoDB.VistaDueños.resources
+C:\Users\Bryam\documents\visual studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\obj\Debug\CRUD_MongoDB.VistaMascotas.resources
