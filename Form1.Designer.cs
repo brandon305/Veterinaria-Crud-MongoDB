@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.MostrarDueños = new System.Windows.Forms.Button();
             this.lblsexo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.lbldireccion = new System.Windows.Forms.TextBox();
@@ -37,12 +38,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.eliminarDueño = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.AgregarDueño = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.MostrarMascotas = new System.Windows.Forms.Button();
             this.lbledad = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.lbldueño = new System.Windows.Forms.TextBox();
@@ -51,13 +53,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.eliminarMascota = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.AgregarMascota = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.MostrarDueños = new System.Windows.Forms.Button();
-            this.MostrarMascotas = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -73,7 +73,7 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.eliminarDueño);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.AgregarDueño);
@@ -82,6 +82,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(312, 287);
             this.panel1.TabIndex = 0;
+            // 
+            // MostrarDueños
+            // 
+            this.MostrarDueños.Location = new System.Drawing.Point(281, 248);
+            this.MostrarDueños.Name = "MostrarDueños";
+            this.MostrarDueños.Size = new System.Drawing.Size(19, 23);
+            this.MostrarDueños.TabIndex = 13;
+            this.MostrarDueños.Text = "M";
+            this.MostrarDueños.UseVisualStyleBackColor = true;
+            this.MostrarDueños.Click += new System.EventHandler(this.MostrarDueños_Click);
             // 
             // lblsexo
             // 
@@ -147,14 +157,15 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Número";
             // 
-            // button4
+            // eliminarDueño
             // 
-            this.button4.Location = new System.Drawing.Point(172, 248);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "ELIMINAR";
-            this.button4.UseVisualStyleBackColor = true;
+            this.eliminarDueño.Location = new System.Drawing.Point(172, 248);
+            this.eliminarDueño.Name = "eliminarDueño";
+            this.eliminarDueño.Size = new System.Drawing.Size(75, 23);
+            this.eliminarDueño.TabIndex = 4;
+            this.eliminarDueño.Text = "ELIMINAR";
+            this.eliminarDueño.UseVisualStyleBackColor = true;
+            this.eliminarDueño.Click += new System.EventHandler(this.eliminarDueño_Click);
             // 
             // button3
             // 
@@ -204,7 +215,7 @@
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.eliminarMascota);
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button7);
             this.panel2.Controls.Add(this.AgregarMascota);
@@ -213,6 +224,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(312, 287);
             this.panel2.TabIndex = 1;
+            // 
+            // MostrarMascotas
+            // 
+            this.MostrarMascotas.Location = new System.Drawing.Point(281, 248);
+            this.MostrarMascotas.Name = "MostrarMascotas";
+            this.MostrarMascotas.Size = new System.Drawing.Size(19, 23);
+            this.MostrarMascotas.TabIndex = 14;
+            this.MostrarMascotas.Text = "M";
+            this.MostrarMascotas.UseVisualStyleBackColor = true;
+            this.MostrarMascotas.Click += new System.EventHandler(this.MostrarMascotas_Click);
             // 
             // lbledad
             // 
@@ -278,14 +299,15 @@
             this.label9.TabIndex = 5;
             this.label9.Text = "Raza";
             // 
-            // button5
+            // eliminarMascota
             // 
-            this.button5.Location = new System.Drawing.Point(172, 248);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "ELIMINAR";
-            this.button5.UseVisualStyleBackColor = true;
+            this.eliminarMascota.Location = new System.Drawing.Point(172, 248);
+            this.eliminarMascota.Name = "eliminarMascota";
+            this.eliminarMascota.Size = new System.Drawing.Size(75, 23);
+            this.eliminarMascota.TabIndex = 4;
+            this.eliminarMascota.Text = "ELIMINAR";
+            this.eliminarMascota.UseVisualStyleBackColor = true;
+            this.eliminarMascota.Click += new System.EventHandler(this.eliminarMascota_Click);
             // 
             // button6
             // 
@@ -324,26 +346,6 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Nombre";
             // 
-            // MostrarDueños
-            // 
-            this.MostrarDueños.Location = new System.Drawing.Point(281, 248);
-            this.MostrarDueños.Name = "MostrarDueños";
-            this.MostrarDueños.Size = new System.Drawing.Size(19, 23);
-            this.MostrarDueños.TabIndex = 13;
-            this.MostrarDueños.Text = "M";
-            this.MostrarDueños.UseVisualStyleBackColor = true;
-            this.MostrarDueños.Click += new System.EventHandler(this.MostrarDueños_Click);
-            // 
-            // MostrarMascotas
-            // 
-            this.MostrarMascotas.Location = new System.Drawing.Point(281, 248);
-            this.MostrarMascotas.Name = "MostrarMascotas";
-            this.MostrarMascotas.Size = new System.Drawing.Size(19, 23);
-            this.MostrarMascotas.TabIndex = 14;
-            this.MostrarMascotas.Text = "M";
-            this.MostrarMascotas.UseVisualStyleBackColor = true;
-            this.MostrarMascotas.Click += new System.EventHandler(this.MostrarMascotas_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -367,7 +369,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button eliminarDueño;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button AgregarDueño;
@@ -387,7 +389,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button eliminarMascota;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button AgregarMascota;

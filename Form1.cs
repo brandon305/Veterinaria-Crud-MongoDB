@@ -4,11 +4,15 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using MongoDB.Driver.Builders;
+using MongoDB.Driver.GridFS;
+using MongoDB.Driver.Linq;
 
 
 namespace CRUD_MongoDB
@@ -76,6 +80,44 @@ namespace CRUD_MongoDB
         {
             VistaMascotas ventana1 = new VistaMascotas();
             ventana1.Show();
+        }
+
+        private void eliminarDueño_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string conexion = "mongodb://localhost";
+                var mc = new MongoClient(conexion);
+                var servidor = mc.GetServer();
+                var database = servidor.GetDatabase("Veterinaria");
+                servidor.Connect();
+                var coleccion = database.GetCollection<Dueño>("dueños");
+                coleccion.Remove(Query.EQ("nombre",lblnombre.Text));
+                MessageBox.Show("Se borro correctamente");
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("ocurrio un error:" + error);
+            }
+        }
+
+        private void eliminarMascota_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string conexion = "mongodb://localhost";
+                var mc = new MongoClient(conexion);
+                var servidor = mc.GetServer();
+                var database = servidor.GetDatabase("Veterinaria");
+                servidor.Connect();
+                var coleccion = database.GetCollection<Mascota>("mascotas");
+                coleccion.Remove(Query.EQ("nombre", lblnombremascota.Text));
+                MessageBox.Show("Se borro correctamente");
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("ocurrio un error:" + error);
+            }
         }
 
     
