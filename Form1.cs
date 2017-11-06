@@ -120,6 +120,58 @@ namespace CRUD_MongoDB
             }
         }
 
+        private void actualizarDueño_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string conexion = "mongodb://localhost";
+                var mc = new MongoClient(conexion);
+                var servidor = mc.GetServer();
+                var database = servidor.GetDatabase("Veterinaria");
+                servidor.Connect();
+                var coleccion = database.GetCollection<Dueño>("dueños");
+
+                var query = Query.EQ("nombre", lblnombre.Text);
+                var dueño = coleccion.FindOne(query);
+                dueño.numero = lblnumero.Text;
+                dueño.direccion = lbldireccion.Text;
+                dueño.sexo = lblsexo.Text;
+                coleccion.Save(dueño);
+
+                MessageBox.Show("Se actualizo correctamente");
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("ocurrio un error:" + error);
+            }
+        }
+
+        private void actualizarMascota_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string conexion = "mongodb://localhost";
+                var mc = new MongoClient(conexion);
+                var servidor = mc.GetServer();
+                var database = servidor.GetDatabase("Veterinaria");
+                servidor.Connect();
+                var coleccion = database.GetCollection<Mascota>("mascotas");
+
+                var query = Query.EQ("nombre", lblnombremascota.Text);
+                var mascota = coleccion.FindOne(query);
+                mascota.raza = lblraza.Text;
+                mascota.dueño = lbldueño.Text;
+                mascota.edad = lbledad.Text;
+                coleccion.Save(mascota);
+
+                MessageBox.Show("Se actualizo correctamente");
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("ocurrio un error:" + error);
+            }
+        }
+
     
     }
 }

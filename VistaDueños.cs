@@ -31,6 +31,6 @@ namespace CRUD_MongoDB
             servidor.Connect();
             var coleccion = database.GetCollection<Dueño>("dueños");
             dataGridViewDueños.DataSource = coleccion.FindAll().ToList();
-        } 
+        }
     }
 }
