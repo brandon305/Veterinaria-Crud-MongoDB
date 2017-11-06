@@ -1,0 +1,13 @@
+c:\users\bryam\documents\visual studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\bin\Debug\CRUD MongoDB.exe.config
+c:\users\bryam\documents\visual studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\bin\Debug\CRUD MongoDB.exe
+c:\users\bryam\documents\visual studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\bin\Debug\CRUD MongoDB.pdb
+c:\users\bryam\documents\visual studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\obj\Debug\CRUD MongoDB.csprojResolveAssemblyReference.cache
+c:\users\bryam\documents\visual studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\obj\Debug\CRUD_MongoDB.Form1.resources
+c:\users\bryam\documents\visual studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\obj\Debug\CRUD_MongoDB.Properties.Resources.resources
+c:\users\bryam\documents\visual studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\obj\Debug\CRUD MongoDB.csproj.GenerateResource.Cache
+c:\users\bryam\documents\visual studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\obj\Debug\CRUD MongoDB.exe
+c:\users\bryam\documents\visual studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\obj\Debug\CRUD MongoDB.pdb
+C:\Users\Bryam\Documents\Visual Studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\bin\Debug\MongoDB.Bson.dll
+C:\Users\Bryam\Documents\Visual Studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\bin\Debug\MongoDB.Driver.dll
+C:\Users\Bryam\Documents\Visual Studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\bin\Debug\MongoDB.Bson.xml
+C:\Users\Bryam\Documents\Visual Studio 2012\Projects\CRUD MongoDB\CRUD MongoDB\bin\Debug\MongoDB.Driver.xml
